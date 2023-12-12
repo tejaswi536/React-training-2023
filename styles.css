@@ -1,0 +1,47 @@
+form{
+    font: 15px;
+    padding: 5px;
+    justify-content: center;
+    margin: 5px;
+    box-shadow: 0 0 10px rgba(227, 21, 21, 0.1);
+    width: auto;
+    border-radius: 10px;
+    max-width: 37%;
+    background-color: rgb(167, 220, 160);     
+}
+div{
+    padding: 100px;
+    justify-content: center;
+}
+button {
+    border: none;
+    background-color: rgb(125, 214, 125) ;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.group-1 {
+    border: none;
+    background-color: rgb(125, 214, 125) ;
+    color: black;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 15px;
+    margin-top: 10px;
+    margin-right: 18px;
+}
+
+body{
+    align-items: center;
+    justify-content: center;
+}
+
+input{
+    margin: 5px;
+    border-radius: 5px;
+    border-color: rgb(109, 150, 109);
+}
