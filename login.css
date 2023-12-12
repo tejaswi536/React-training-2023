@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0c0808;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.top-section {
+    display: flex;
+    justify-content: center;
+    margin-left: 120px;
+    margin-bottom: 30px;
+    margin-top: 0;
+    width: 50%;
+    padding: 5px;
+}
+
+.atm-branch, .language {
+    font-size: 14px;
+    color: #f2f6fa;
+    margin-left: 30px;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 300px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid rgb(73, 72, 72); /* Use a white line as the border */
+    background-color: transparent; /* Make the input background transparent */
+    color: rgb(73, 72, 72);
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.remember-me input {
+   width: 10%;
+   
+}
+.remember-me a {
+    margin-left: 50px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+    font-size: small;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    display: block;
+    margin: 1px auto;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.links {
+    margin-top: 15px;
+}
+
+a {
+    display: block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #007bff;
+    font-size: small;
+}
