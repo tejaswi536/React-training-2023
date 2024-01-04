@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM in Java script</title>
+    <!-- Including the script at the end, allowing HTML to be fully parsed first -->
+
+    <!-- 
+    Placing scripts at the end of the body can prevent potential errors like "Cannot read properties of null (reading 'appendChild')".
+    This is because, if the script manipulates the DOM and relies on elements that should be in the HTML body,
+    ensuring the script runs after the HTML document is fully loaded is crucial. 
+    You can use the DOMContentLoaded event or place the script just before the closing body tag to achieve this.
+    -->
+    <!--<script src="domExample.js"></script> -->
+</head>
+<body>
+  <h2 id="mainHeading">What is DOM?</h2>
+  <p class="paragraph" id="mainParagraph">The Document Object Model (DOM) in JavaScript is like a tree-like structure that represents a webpage. Each part of the page, like paragraphs, images, and buttons, is a "node" in this tree. You can use JavaScript to interact with and change these nodes. For example, you can add new content to a webpage, change the text in a paragraph, or make a button do something when clicked. The DOM helps JavaScript talk to and control the elements on a webpage.</p>
+  <p class="paragraph">Modifying HTML using the DOM (Document Object Model)</p>
+  <p>console.log(document) and console.log(window) are both logging objects, but they represent different things in the context of a web browser.</p>
+<p>
+    <b>console.log(document):</b>
+    The document object represents the entire HTML document.
+    It is part of the DOM (Document Object Model) and provides an interface to interact with the content and structure of the document.
+    You can use document to access elements, modify content, update styles, and perform various operations on the document itself.
+  </p><p>
+    <b>console.log(window):</b>
+    The window object is the global object in a browser environment.
+    It represents the browser window or tab and encompasses the entire browsing context.
+    window includes properties and methods that relate to the browser environment, such as handling events, opening new windows, and setting timeouts.</p>
+    <!-- Script at the end, allowing HTML to be fully parsed first -->
+    <script src="domExample.js"></script>
+</body>
+</html>
