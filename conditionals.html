@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Conditionals Explanation</title>
+    
+</head>
+<body>
+    <h1>JavaScript Conditionals Explanation</h1>
+
+    <h2>if Statement</h2>
+    <p>The <code>if</code> statement allows you to execute a block of code only if a specified condition is true.</p>
+    <pre>
+        <code>
+let condition = true;
+
+if (condition) {
+    console.log("The condition is true. This block is executed.");
+}
+        </code>
+    </pre>
+
+    <h2>if-else Statement</h2>
+    <p>The <code>if-else</code> statement allows you to execute one block of code if the specified condition is true and another block of code if it is false.</p>
+    <pre>
+        <code>
+let condition = false;
+
+if (condition) {
+    console.log("The condition is true. This block is executed.");
+} else {
+    console.log("The condition is false. This block is executed.");
+}
+        </code>
+    </pre>
+
+    <h2>if-else if-else Statement</h2>
+    <p>The <code>if-else if-else</code> statement allows you to check multiple conditions and execute the corresponding block of code for the first true condition.</p>
+    <pre>
+        <code>
+let condition1 = false;
+let condition2 = true;
+
+if (condition1) {
+    console.log("Condition 1 is true. This block is executed.");
+} else if (condition2) {
+    console.log("Condition 2 is true. This block is executed.");
+} else {
+    console.log("None of the conditions is true. This block is executed.");
+}
+        </code>
+    </pre>
+
+    <h2>Switch Statement</h2>
+    <p>The <code>switch</code> statement allows you to test a variable against multiple values and execute different blocks of code based on the matched value.</p>
+    <pre>
+        <code>
+let expression = "value2";
+
+switch (expression) {
+    case "value1":
+        console.log("Expression equals value1. This block is executed.");
+        break;
+    case "value2":
+        console.log("Expression equals value2. This block is executed.");
+        break;
+    default:
+        console.log("None of the cases match. This block is executed.");
+}
+        </code>
+    </pre>
+
+    <h2>Ternary Operator (Conditional Operator)</h2>
+    <p>The ternary operator provides a concise way to write simple if-else statements in a single line.</p>
+    <pre>
+        <code>
+let condition = true;
+
+let result = (condition) ? "True Value" : "False Value";
+console.log(result);
+        </code>
+    </pre>
+
+    <p>These examples demonstrate how each conditional construct works in JavaScript.</p>
+    <script src="conditionals.js"></script>
+</body>
+</html>

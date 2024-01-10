@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <title>Loop Statements in JavaScript</title>
+</head>
+<body>
+    <h1>Loop Statements in JavaScript</h1>
+    <h2>For Loop</h2>
+    <p>The <code>for</code> statement is used to create a loop that consists of three optional expressions (initialization, condition, and increment/decrement) and a statement block to be executed.</p>
+    <pre>
+for (initialization; condition; increment/decrement) {
+    // Code to be executed in each iteration
+}
+</pre>
+<p>The loop continues to execute as long as the specified condition is true.</p>
+
+    <h2>While Loop</h2>
+    <p>The <code>while</code> statement creates a loop that executes a block of code as long as the specified condition is true.</p>
+    <pre>
+while (condition) {
+    // Code to be executed while the condition is true
+}
+    </pre>
+    <p>The loop continues to execute as long as the specified condition remains true.</p>
+    <h2>Do-While Loop</h2>
+    <p>The <code>do-while</code> statement is similar to the <code>while</code> statement, but the block of code is executed at least once before checking the condition.</p>
+    <pre>
+do {
+    // Code to be executed at least once
+} while (condition);
+    </pre>
+    <p>The loop continues to execute as long as the specified condition is true.</p>
+    <p>While loops and do-while loops are particularly useful when the number of iterations is not known in advance, while the for loop is often used when the number of iterations is known or easily determined. These loops are control flow constructs that involve conditions to determine whether the loop should continue executing.</p>
+
+    <h3>Significance of break statement</h3>
+    <p>In JavaScript, the break statement is used to terminate the execution of a loop or switch statement. Its significance varies depending on the context in which it is used:
+
+        <h4>Within a Switch Statement:</h4>
+        In a switch statement, break is used to exit the switch block after a case is matched. This is important to prevent "fall-through," where execution continues to the next case even after a match. Without break, all subsequent cases would be executed until a break is encountered or the end of the switch block is reached.
+        
+        Example:<pre><code>
+switch (day) {
+    case 1:
+        console.log('It\'s Monday.');
+        break;
+    case 2:
+        console.log('It\'s Tuesday.');
+        break;
+    // ... other cases ...
+    default:
+        console.log('Invalid day.');
+}
+</code>
+</pre>
+        Without break after each case, if day is 1, it would execute all the cases below it until the end of the switch block or until a break is encountered.
+        
+        <h4>Within a Loop:</h4>
+        
+        In a loop (e.g., for, while, do-while), break is used to exit the loop prematurely. When a break statement is encountered, the loop is terminated, and the program continues with the next statement after the loop.
+        
+        Example:
+<pre>
+    <code>        
+for (let i = 0; i < 10; i++) {
+    if (i === 5) {
+        console.log('Breaking out of the loop at i = 5.');
+        break;
+    }
+    console.log(i);
+}
+    </code>
+</pre>
+        In this example, the loop is terminated when i becomes 5, and the message is printed. Without break, the loop would continue until i reaches 9.
+        
+        In summary, the break statement is crucial for controlling the flow of execution, ensuring that loops and switch statements behave as intended, and preventing unintended fall-through or infinite loops.</p>
+        <script src="loopstatements.js"></script>
+</body>
+</html>
