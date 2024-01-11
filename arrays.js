@@ -1,16 +1,26 @@
 
-document.body.appendChild(document.createElement("p"));
-console.log(document);
-let xx = document.getElementById("app");
-xx.innerHTML = "hjgkjgkjgkjgkjgkjgk";
+const form = document.querySelector('[data-form]');
+const input = document.querySelector('[data-input]');
+const btn = document.querySelector('[data-btn]');
+const parentEle = document.querySelector("#one");
 
-let ele = document.getElementsByClassName("para");
-console.log(ele);
-const bb = Array.from(ele);
-console.log(bb);
-bb.forEach((x) => (x.style.color = "red"));
+form.addEventListener('submit', (e)=>{
+    e.preventDefault();
+    const newEle = document.createElement("li");
+    const btn1 = document.createElement("button");
+    btn1.classList.add("delete-btn");
+    btn1.classList.add("delete-btn1");
+    btn1.innerText = "delete";
+    newEle.innerHTML = input.value;
+    parentEle.append(newEle);
+    newEle.append(btn1);
+    input.value = "";
+    btn1.addEventListener("click", function(){
+        newEle.remove();
+        console.log("gghh", this);
+    })
+    
+})
 
-const qq = document.querySelectorAll(".para");
-console.log(qq);
 
-qq.forEach((gg) => (gg.style.color = "yellow"));
+
