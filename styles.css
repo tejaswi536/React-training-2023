@@ -1,0 +1,30 @@
+/* Style for the accordion */
+.accordion {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+/* Style for accordion items */
+.accordion-item {
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+}
+
+/* Style for accordion item headers */
+.accordion-header {
+    padding: 10px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+/* Style for accordion item content (initially hidden) */
+.accordion-content {
+    padding: 10px;
+    display: none;
+}
+
+/* Style for active headers (when content is visible) */
+.accordion-header.active {
+    background-color: #ddd;
+}
